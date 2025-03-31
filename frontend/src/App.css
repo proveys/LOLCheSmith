@@ -1,0 +1,14 @@
+/* 📄 App.css */
+.App {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}

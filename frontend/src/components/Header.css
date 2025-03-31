@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-links a,
+.nav-links button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  background-color: #e0e0e0;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.auth-buttons a,
+.auth-buttons button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons a:hover,
+.auth-buttons button:hover {
+  background-color: #e0e0e0;
+}
