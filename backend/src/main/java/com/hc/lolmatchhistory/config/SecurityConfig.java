@@ -16,13 +16,13 @@ import java.util.List;
 @Configuration
 public class SecurityConfig {
 
-    // 🔐 보안 경로 설정
+    //  보안 경로 설정
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
-                .csrf(csrf -> csrf.disable()) // 🔓 CSRF 보호 비활성화 (React 프론트와 연동 시 편의)
+                .csrf(csrf -> csrf.disable()) //  CSRF 보호 비활성화 (React 프론트와 연동 시 편의)
                 .authorizeHttpRequests(auth -> auth
-                        // 🔓 인증 없이 접근 허용할 경로
+                        //  인증 없이 접근 허용할 경로
                         .requestMatchers(
                                 "/summoner/**",        // 소환사 검색 관련 API
                                 "/match/**",           // 매치 히스토리 API
@@ -37,7 +37,7 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/api/board").authenticated()
                         .requestMatchers(HttpMethod.DELETE, "/api/board/**").authenticated()
 
-                        // 🔐 그 외 요청은 인증 필요
+                        //  그 외 요청은 인증 필요
                         .anyRequest().authenticated()
                 )
                 .build();
@@ -57,7 +57,7 @@ public class SecurityConfig {
         return new CorsFilter(source);
     }
 
-    // 🔐 비밀번호 암호화용 PasswordEncoder Bean 등록
+    //  비밀번호 암호화용 PasswordEncoder Bean 등록
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
