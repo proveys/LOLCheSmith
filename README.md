@@ -7,9 +7,7 @@ Riot API 기반으로 소환사 전적을 검색할 수 있는 웹 애플리케�
 검색 기록 저장 및 UI 개선을 통해 사용 편의성을 높였습니다.
 
 ## 🚀 배포환경
-- AWS EC2 (Spring Boot)  
-- AWS RDS (MySQL)  
-- Vercel 또는 Netlify (프론트엔드 정적 배포)  
+- AWS
 - 현재 서버는 비활성화 상태입니다.
 
 ## 🏆 주요 기능
